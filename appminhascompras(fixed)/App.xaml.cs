@@ -6,7 +6,8 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new Views.ListaProduto());
+            // troca a tela inicial para a tela de lista de produtos
         }
     }
 }
