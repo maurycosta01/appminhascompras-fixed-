@@ -9,14 +9,14 @@
    </ContentPage.ToolbarItems>  
    <VerticalStackLayout>
        <!-- aqui montando a barra de pesquisa -->
-        <SearchBar x:Name="txt_search" Placeholder="Busca de Produtos"/>
-        <ListView x:Name="lst.produtos">
-       <ListView.Header>
-            
-        </ListView.Header>
-        <ListView.ItemTemplate>
-            
-        </ListView.ItemTemplate>
+        <!--SearchBar x:Name="txt_search" Placeholder="Busca de Produtos"/-->
+        <SearchBar Placeholder="Buscar..." TextChanged="OnSearchBarTextChanged" />
+        <ListView ItemsSource="{Binding ItensFiltradosExibidos}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
     </VerticalStackLayout>  
 </ContentPage>
