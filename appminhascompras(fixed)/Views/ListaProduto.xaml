@@ -7,10 +7,16 @@
        <ToolbarItem Text="Somar"/>  
        <ToolbarItem Text="Adicionar" Clicked="ToolbarItem_Clicked"/>  
    </ContentPage.ToolbarItems>  
-   <VerticalStackLayout>  
-       <Label   
-           Text="1"  
-           VerticalOptions="Center"   
-           HorizontalOptions="Center" />  
-   </VerticalStackLayout>  
+   <VerticalStackLayout>
+       <!-- aqui montando a barra de pesquisa -->
+        <SearchBar x:Name="txt_search" Placeholder="Busca de Produtos"/>
+        <ListView x:Name="lst.produtos">
+       <ListView.Header>
+            
+        </ListView.Header>
+        <ListView.ItemTemplate>
+            
+        </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>  
 </ContentPage>
